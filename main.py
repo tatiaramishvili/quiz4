@@ -4,7 +4,7 @@ import csv
 from time import sleep
 payload={'page':'audios','send[shop.catalog][page]':1}
 url='https://www.lit.ge/index.php'
-file = open('books.csv', 'w', encoding='UTF-8')
+file = open('books.csv', 'w', encoding='UTF-8-sig')
 file_object=csv.writer(file)
 file_object.writerow(['Names','Prices','Authors'])
 while payload['send[shop.catalog][page]']<=17 :
